@@ -53,7 +53,7 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD';
+    const githubRepo = 'https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD';
 
     // Check update status
     let updateMessage = `✅ Your SHEIKH-ALI-MD bot is up-to-date!`;
@@ -73,7 +73,7 @@ Use *.update* to update.`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
-      image: { url: 'https://i.ibb.co/chcyQbkP/Snapchat-850352165.jpg' },
+      image: { url: 'https://i.ibb.co/xqkj0Jkr/9557.jpg' },
       caption: statusMessage,
       contextInfo: {
         mentionedJid: [m.sender],
@@ -81,7 +81,7 @@ Use *.update* to update.`;
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363333032882285@newsletter',
-          newsletterName: '𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡',
+          newsletterName: '𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐',
           serverMessageId: 143
         }
       }

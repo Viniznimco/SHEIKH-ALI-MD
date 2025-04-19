@@ -19,7 +19,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > *ʀᴀᴍ ᴜsᴇ* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 > *ɴᴀᴍᴇ ʙᴏᴛ* : *𝐒𝐇𝐄𝐈𝐊𝐇 𝐀𝐋𝐈 𝐌𝐃*
 > *ᴄʀᴇᴀᴛᴏʀ* : *𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡*
-> *ᴠᴇʀsɪᴏɴ* : *ᴠ.2.0*
+> *ᴠᴇʀsɪᴏɴ* : *ᴠ.4.0* ʙᴇᴛᴀ
 *❖╰────────────···▸▸*
 *♡︎•━━━━━━☻︎━━━━━━•♡︎*
 *╭╼╼╼╼╼╼╼╼╼╼*
@@ -33,7 +33,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *├➤ 8 • ᴏᴡɴᴇʀ ᴍᴇɴᴜ
 *├➤ 9 • ᴏᴛʜᴇʀ ᴍᴇɴᴜ
 *├➤ 10 • ʀᴇᴀᴄᴛɪᴏɴs
-*├➤ 11 • sᴄᴀᴍᴍᴇʀ 
+*├➤ 11 • sᴄᴀᴍᴍᴇʀ
+*├➤ 12 • ʟᴏɢᴏ ᴍᴇɴᴜ 
 *╰╼╼╼╼╼╼╼╼╼╼*
 * ▣▣▣▣▣▣▣▣▣▣▣▣*⁠⁠⁠⁠
 
@@ -114,8 +115,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• blackbox
 ┃◈┃• luma
 ┃◈┃• dj 
-┃◈┃• khan
-┃◈┃• jawad
+┃◈┃• sheikh
+┃◈┃• ali
 ┃◈┃• gpt4
 ┃◈┃• bing
 ┃◈┃• imagine 
@@ -276,7 +277,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• lockgc
 ┃◈┃• unlockgc
 ┃◈┃• invite
-┃◈┃• tag
+┃◈┃• tag @user
 ┃◈┃• hidetag
 ┃◈┃• tagall
 ┃◈┃• tagadmins
@@ -292,6 +293,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• owner
 ┃◈┃• menu
 ┃◈┃• menu2
+┃◈┃• vv,😂,😏,wah,nice
 ┃◈┃• listcmd
 ┃◈┃• allmenu
 ┃◈┃• repo
@@ -303,9 +305,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• shutdown
 ┃◈┃• updatecmd
 ┃◈┃• alive
-┃◈┃• ping 
+┃◈┃• ping
 ┃◈┃• gjid
-┃◈┃• jid
+┃◈┃• jid @user
 ╰────────────────────●●►
 
 
@@ -328,8 +330,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• cpp
 ┃◈┃• rw
 ┃◈┃• pair
-┃◈┃• pair2
-┃◈┃• pair3
 ┃◈┃• fancy
 ┃◈┃• logo <text>
 ┃◈┃• define
@@ -378,7 +378,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• wink @tag
 ┃◈┃• poke @tag
 ┃◈┃• dance @tag
-┃◈┃• cringe @tag   
+┃◈┃• cringe @tag
 ╰────────────────────●●►
 
 
@@ -403,6 +403,46 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃★│ • Please report to all these scammers's numbers.
 ┃★│ • If you have more scammers's number so contact me. I will add in my bot.
 ┃★│ • Owner: https://api.whatsapp.com/send?phone=923143702270&text=Hello+𓄂.𝑺𝑯𝑬𝑰𝑲𝑯+𝑨𝑳𝑰+🔥༽༼+♡+I+have+scammer's+number.+Please+add+his/her+number+in+your+bot🥰.
+╰────────────────────●●►
+
+
+> *© Pᴏᴡᴇʀᴇᴅ Bʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡*`);
+                        break;
+                    case '12':               
+                        reply(`*꧁◈╾───☉ ʟᴏɢᴏ ᴍᴇɴᴜ ☉───╼◈꧂*
+                        
+╭────────●●►
+┃◈┃• neonlight
+┃◈┃• blackpink
+┃◈┃• dragonball
+┃◈┃• 3dcomic
+┃◈┃• america
+┃◈┃• naruto
+┃◈┃• sadgirl
+┃◈┃• clouds
+┃◈┃• futuristic
+┃◈┃• 3dpaper
+┃◈┃• eraser
+┃◈┃• sunset
+┃◈┃• leaf
+┃◈┃• galaxy
+┃◈┃• sans
+┃◈┃• boom
+┃◈┃• hacker
+┃◈┃• devilwings
+┃◈┃• nigeria
+┃◈┃• bulb
+┃◈┃• angelwings
+┃◈┃• zodiac
+┃◈┃• luxury
+┃◈┃• paint
+┃◈┃• frozen
+┃◈┃• castle
+┃◈┃• tatoo
+┃◈┃• valorant
+┃◈┃• bear
+┃◈┃• typography
+┃◈┃• birthday
 ╰────────────────────●●►
 
 

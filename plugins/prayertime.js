@@ -13,7 +13,7 @@ cmd({
 },
 async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, isItzcp, groupAdmins, isBotAdmins, isAdmins, reply}) => {
     try {
-        const city = args.length > 0 ? args.join(" ") : "renala khurd"; // Default to Bhakkar if no city is provided
+        const city = args.length > 0 ? args.join(" ") : "bhakkar"; // Default to Bhakkar if no city is provided
         const apiUrl = `https://api.nexoracle.com/islamic/prayer-times?city=${city}`;
 
         const response = await fetch(apiUrl);
@@ -53,7 +53,7 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/chcyQbkP/Snapchat-850352165.jpg` }, // Image URL here
+                image: { url: `https://i.ibb.co/xqkj0Jkr/9557.jpg` }, // Image URL here
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -61,7 +61,7 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363333032882285@newsletter',
-                        newsletterName: '𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡',
+                        newsletterName: '𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐',
                         serverMessageId: 143
                     }
                 }
@@ -71,7 +71,7 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
 
         // Optionally, send an audio file related to the prayer time
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/Islamic.m4a' },
+            audio: { url: 'https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/raw/refs/heads/main/autovoice/Islamic.m4a' },
             mimetype: 'audio/mp4',
             ptt: false
         }, { quoted: mek });

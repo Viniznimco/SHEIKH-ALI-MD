@@ -27,12 +27,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 👥 *Followers*: ${data.followers} | Following: ${data.following}
 📅 *Created At*: ${new Date(data.created_at).toDateString()}
 🔭 *Public Gists*: ${data.public_gists}
-> © Pᴏᴡᴇʀᴇᴅ Bʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡`;
+> © Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡`;
           const sentMsg = await conn.sendMessage(from,{image:{url: data.avatar_url },caption: userInfo },{quoted:mek })
     } catch (e) {
         console.log(e);
         reply(`error: ${e.response ? e.response.data.message : e.message}`);
     }
 });
-
-// jawad tech x 

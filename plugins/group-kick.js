@@ -1,47 +1,44 @@
-const config = require('../config')
-const { cmd, commands } = require('../command')
-const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
+const { cmd } = require('../command');
 
 cmd({
-    pattern: "kick",
-    react: "🥏",
-    alias: ["k", "remove"],
-    desc: "To Remove a participant from Group",
-    category: "group",
-    use: '.kick',
+    pattern: "remove",
+    alias: ["kick", "k"],
+    desc: "Removes a member from the group",
+    category: "admin",
+    react: "❌",
     filename: __filename
 },
-async(conn, mek, m, { from, quoted, isGroup, senderNumber, botNumber, groupAdmins, isBotAdmins, reply }) => {
+async (conn, mek, m, {
+    from, q, isGroup, isBotAdmins, reply, quoted, senderNumber
+}) => {
+    // Check if the command is used in a group
+    if (!isGroup) return reply("❌ This command can only be used in groups.");
+
+    // Get the bot owner's number dynamically from conn.user.id
+    const botOwner = conn.user.id.split(":")[0];
+    if (senderNumber !== botOwner) {
+        return reply("❌ Only the bot owner can use this command.");
+    }
+
+    // Check if the bot is an admin
+    if (!isBotAdmins) return reply("❌ I need to be an admin to use this command.");
+
+    let number;
+    if (m.quoted) {
+        number = m.quoted.sender.split("@")[0]; // If replying to a message, get the sender's number
+    } else if (q && q.includes("@")) {
+        number = q.replace(/[@\s]/g, ''); // If mentioning a user
+    } else {
+        return reply("❌ Please reply to a message or mention a user to remove.");
+    }
+
+    const jid = number + "@s.whatsapp.net";
+
     try {
-        if (!isGroup) return reply("❌ This command can only be used in groups.");
-
-        // Ensure only group admins can use this command
-        if (!groupAdmins.includes(senderNumber + "@s.whatsapp.net")) {
-            return reply("❌ Only group admins can use this command.");
-        }
-
-        if (!isBotAdmins) return reply("❌ I need to be an admin to kick members.");
-
-        // Fetch mentioned user or replied user
-        let users = quoted ? quoted.sender : (m.mentionedJid ? m.mentionedJid[0] : false);
-        if (!users) return reply("❌ *Couldn't find any user in context*");
-
-        // Prevent kicking bot itself
-        if (users === botNumber) return reply("❌ I can't kick myself!");
-
-        // Extract bot owner's number
-        const botOwner = conn.user.id.split(":")[0];
-
-        // Prevent kicking the owner
-        if (users === botOwner + "@s.whatsapp.net") return reply("❌ You cannot kick the bot owner!");
-
-        // Kick the user
-        await conn.groupParticipantsUpdate(from, [users], "remove");
-        await conn.sendMessage(from, { text: "*Successfully removed* ✔️" }, { quoted: mek });
-
-    } catch (e) {
-        await conn.sendMessage(from, { react: { text: '❌', key: mek.key } });
-        console.log(e);
-        reply(`❌ *Error Occurred !!*\n\n${e}`);
+        await conn.groupParticipantsUpdate(from, [jid], "remove");
+        reply(`✅ Successfully removed @${number}`, { mentions: [jid] });
+    } catch (error) {
+        console.error("Remove command error:", error);
+        reply("❌ Failed to remove the member.");
     }
 });

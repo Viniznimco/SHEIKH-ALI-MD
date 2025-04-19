@@ -1,6 +1,5 @@
 const axios = require('axios');
 const { cmd } = require('../command');
-const config = require('../config'); // Ensure your API key is in config
 
 cmd({
     pattern: "movie",
@@ -9,51 +8,71 @@ cmd({
     react: "🎬",
     filename: __filename
 },
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+async (conn, mek, m, { from, reply, sender, args }) => {
     try {
-        const movieName = args.join(' ');
+        // Properly extract the movie name from arguments
+        const movieName = args.length > 0 ? args.join(' ') : m.text.replace(/^[\.\#\$\!]?movie\s?/i, '').trim();
+        
         if (!movieName) {
-            return reply("📽️ Please provide the name of the movie.");
+            return reply("📽️ Please provide the name of the movie.\nExample: .movie Iron Man");
         }
 
-        const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movieName)}&apikey=${config.OMDB_API_KEY}`;
+        const apiUrl = `https://apis.davidcyriltech.my.id/imdb?query=${encodeURIComponent(movieName)}`;
         const response = await axios.get(apiUrl);
 
-        const data = response.data;
-        if (data.Response === "False") {
-            return reply("🚫 Movie not found.");
+        if (!response.data.status || !response.data.movie) {
+            return reply("🚫 Movie not found. Please check the name and try again.");
         }
 
-        const movieInfo = `
-🎬 *Movie Information* 🎬
+        const movie = response.data.movie;
+        
+        // Format the caption
+        const dec = `
+🎬 *${movie.title}* (${movie.year}) ${movie.rated || ''}
 
-🎥 *Title:* ${data.Title}
-📅 *Year:* ${data.Year}
-🌟 *Rated:* ${data.Rated}
-📆 *Released:* ${data.Released}
-⏳ *Runtime:* ${data.Runtime}
-🎭 *Genre:* ${data.Genre}
-🎬 *Director:* ${data.Director}
-✍️ *Writer:* ${data.Writer}
-🎭 *Actors:* ${data.Actors}
-📝 *Plot:* ${data.Plot}
-🌍 *Language:* ${data.Language}
-🇺🇸 *Country:* ${data.Country}
-🏆 *Awards:* ${data.Awards}
-⭐ *IMDB Rating:* ${data.imdbRating}
-🗳️ *IMDB Votes:* ${data.imdbVotes}
+⭐ *IMDb:* ${movie.imdbRating || 'N/A'} | 🍅 *Rotten Tomatoes:* ${movie.ratings.find(r => r.source === 'Rotten Tomatoes')?.value || 'N/A'} | 💰 *Box Office:* ${movie.boxoffice || 'N/A'}
+
+📅 *Released:* ${new Date(movie.released).toLocaleDateString()}
+⏳ *Runtime:* ${movie.runtime}
+🎭 *Genre:* ${movie.genres}
+
+📝 *Plot:* ${movie.plot}
+
+🎥 *Director:* ${movie.director}
+✍️ *Writer:* ${movie.writer}
+🌟 *Actors:* ${movie.actors}
+
+🌍 *Country:* ${movie.country}
+🗣️ *Language:* ${movie.languages}
+🏆 *Awards:* ${movie.awards || 'None'}
+
+[View on IMDb](${movie.imdbUrl})
 `;
 
-        // Define the image URL
-        const imageUrl = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
+        // Send message with the requested format
+        await conn.sendMessage(
+            from,
+            {
+                image: { 
+                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://files.catbox.moe/7zfdcq.jpg'
+                },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363333032882285@newsletter',
+                        newsletterName: '𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
 
-        // Send the movie information along with the poster image
-        await conn.sendMessage(from, {
-            image: { url: imageUrl },
-            caption: `${movieInfo}\n>© Pᴏᴡᴇʀᴇᴅ Bʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡ `
-        }, { quoted: mek });
     } catch (e) {
-        console.log(e);
+        console.error('Movie command error:', e);
         reply(`❌ Error: ${e.message}`);
     }
 });

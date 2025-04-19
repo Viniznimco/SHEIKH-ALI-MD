@@ -2,7 +2,7 @@ const config = require('../config');
 const { cmd, commands } = require('../command');
 
 cmd({
-    pattern: "ping2",
+    pattern: "ping",
     alias: ["speed","pong"],use: '.ping',
     desc: "Check bot's response time.",
     category: "main",
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363333032882285@newsletter',
-                    newsletterName: "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡",
+                    newsletterName: "𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐",
                     serverMessageId: 143
                 }
             }
@@ -57,7 +57,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
 // ping2 
 
 cmd({
-    pattern: "ping",
+    pattern: "ping2",
     desc: "Check bot's response time.",
     category: "main",
     react: "🍂",
