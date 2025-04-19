@@ -166,7 +166,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• 👑 owner
 ┃◈┃• 📜 menu
 ┃◈┃• 📜 menu2
-┃◈┃• 📊 vv,😂,😏,wah,nice
+┃◈┃• 📊 vv
 ┃◈┃• 📋 listcmd
 ┃◈┃• 📚 allmenu
 ┃◈┃• 📦 repo
