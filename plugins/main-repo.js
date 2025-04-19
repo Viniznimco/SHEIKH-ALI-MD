@@ -188,7 +188,7 @@ ${repoData.description || 'No description provided'}
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
             mimetype: 'audio/mp4',
             ptt: true,
             contextInfo: { 
