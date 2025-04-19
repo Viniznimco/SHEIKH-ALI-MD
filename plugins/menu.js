@@ -4,7 +4,7 @@ const os = require("os")
 const {runtime} = require('../lib/functions')
 cmd({
     pattern: "menu",
-    alias: ["list"],
+    alias: ["sheikh"],
     desc: "menu the bot",
     react: "📜",
     category: "main"
@@ -278,7 +278,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• menu
 ┃◈┃• menu2
 ┃◈┃• vv
-┃◈┃• listcmd
 ┃◈┃• allmenu
 ┃◈┃• repo
 ┃◈┃• block
