@@ -171,8 +171,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• 📦 repo
 ┃◈┃• 🚫 block
 ┃◈┃• ✅ unblock
-┃◈┃• 🖼️ fullpp
-┃◈┃• 🖼️ setpp
 ┃◈┃• 🔄 restart
 ┃◈┃• ⏹️ shutdown
 ┃◈┃• 🔄 updatecmd
@@ -201,7 +199,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• 💋 kiss
 ┃◈┃• 🧐 mon
 ┃◈┃• 😕 cunfuzed
-┃◈┃• 🖼️ setpp
 ┃◈┃• ✋ hand
 ┃◈┃• 🏃 nikal
 ┃◈┃• 🤲 hold
