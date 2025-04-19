@@ -15,9 +15,13 @@ AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*ʏᴏᴜʀ sᴛᴀᴛᴜs sᴇᴇɴ ᴊᴜsᴛ ɴᴏᴡ ʙʏ ♥️🌸⃝𝐂𝐮𝐭𝐞 𝐬𝐡𝐞𝐢𝐤𝐡ᥫ᭡👑*",
 // set the auto reply massage on status reply  
+MENTION_REPLY: process.env.MENTION_REPLY || "false",
+// make true if want auto voice reply if someone menetion you 
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://i.ibb.co/P837zhW/1187.jpg",
+// add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "SHEIKH-ALI-MD",
+BOT_NAME: process.env.BOT_NAME || "𝐒𝐇𝐄𝐈𝐊𝐇-𝐀𝐋𝐈-𝐌𝐃",
 // add bot namw here for menu
 STICKER_NAME: process.env.STICKER_NAME || "SHEIKH-ALI-MD",
 // type sticker pack name 
@@ -29,13 +33,13 @@ DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "923143702270",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡",
+OWNER_NAME: process.env.OWNER_NAME || "𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© Pᴏᴡᴇʀᴇᴅ Bʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡*",
+DESCRIPTION: process.env.DESCRIPTION || "*© Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/yc3j9Qdw/8490.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/chcyQbkP/Snapchat-850352165.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *SHEIKH-ALI-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> HI DEAR I'M ONLINE I'M 𓄂𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ WHATSAPP BOT 😊♻️*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
