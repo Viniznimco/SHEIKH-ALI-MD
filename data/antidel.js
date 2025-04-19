@@ -84,5 +84,3 @@ module.exports = {
     getAnti,
     getAllAntiDeleteSettings,
 };
-
-// by 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡
