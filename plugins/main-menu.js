@@ -42,13 +42,13 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• 🎶 spotify
 ┃◈┃• 🎧 play
 ┃◈┃• 🎧 play2
+┃◈┃• 🎧 play3
 ┃◈┃• 🔉 audio
 ┃◈┃• 🎬 video
 ┃◈┃• 📹 video2
 ┃◈┃• 🎵 ytmp3
 ┃◈┃• 📹 ytmp4
 ┃◈┃• 🎶 song
-┃◈┃• 🎬 darama
 ┃◈┃• ☁️ gdrive
 ┃◈┃• 🌐 ssweb
 ┃◈┃• 🎵 tiks
