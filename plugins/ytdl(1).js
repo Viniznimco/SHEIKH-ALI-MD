@@ -66,7 +66,7 @@ cmd({
 
 cmd({ 
      pattern: "mp3", 
-     alias: ["ytdl3"], 
+     alias: ["ytmp3"], 
      react: "🎶", 
      desc: "Download Youtube song",
      category: "main", 
