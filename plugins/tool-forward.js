@@ -1,4 +1,4 @@
-// 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ SHEIKH-ALI-MD 
+// 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡ - 𝐒𝐇𝐄𝐈𝐊𝐇-𝐀𝐋𝐈-𝐌𝐃 
 // Dont Remove Credit From File 
 
 const { cmd } = require("../command");
@@ -6,7 +6,7 @@ const { cmd } = require("../command");
 // Safety Configuration
 const SAFETY = {
   MAX_JIDS: 20,
-  BASE_DELAY: 2000,  // ali on top 🔝
+  BASE_DELAY: 2000,  // sheikh on top 🔝
   EXTRA_DELAY: 4000,  // huh don't copy mine file 
 };
 

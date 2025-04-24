@@ -101,7 +101,7 @@ async (conn, mek, m, { from, args, reply }) => {
     try {
         // Validate input
         if (!args[0] || !args[0].startsWith("+")) {
-            return reply(`❌ *Usage:* .otpbox <full-number>\nExample: .otpbox +92314370xxxx`);
+            return reply(`❌ *Usage:* .otpbox <full-number>\nExample: .otpbox +9231034481xx`);
         }
 
         const phoneNumber = args[0].trim();
