@@ -1,8 +1,8 @@
 {
   "name": "SHEIKH-ALI-MD",
-  "description": "Javascript WhatsApp bot made by 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐",
-  "logo": "https://i.ibb.co/yc3j9Qdw/8490.jpg",
-  "keywords": ["SHEIKH-ALI-MD"],
+  "description": "Javascript WhatsApp bot made by Jᴀᴡᴀᴅ TᴇᴄʜX",
+  "logo": "https://i.ibb.co/SD6vmsRn/4645.jpg",
+  "keywords": ["𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡"],
   "success_url": "/",
 
     "stack": "container",
@@ -16,8 +16,20 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "SHEIKH-ALI-MD"
+      "value": "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡"
+    },  
+    
+    "ALIVE_IMG": {
+      "description": "paste your image url if you don't have you can use this public url.",
+      "required": true,
+      "value": "https://i.ibb.co/P837zhW/1187.jpg"
     }, 
+    
+    "ALIVE_MSG": {
+      "description": "paste your alive message hear.",
+      "required": true,
+      "value": "HI DEAR I'M ONLINE I'M 𓄂𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ WHATSAPP BOT 😊♻️"
+    },, 
       
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
@@ -86,7 +98,7 @@
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐"
+      "value": "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡"
 }, 
 
     "OWNER_NUMBER": {
@@ -107,6 +119,13 @@
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
       "value": "true"
+      
+    },
+
+     "ANTI_LINK_KICK": {
+      "description": "Make it true if you want bot auto remove group link.",
+      "required": true,
+      "value": "false"
       
     },
     
@@ -137,7 +156,7 @@
       "DELETE_LINKS": {
       "description": "remove links from group automatically without removing member",
       "required": false,
-      "value": "true"
+      "value": "false"
     },
     
     "AUTO_RECORDING": {

@@ -15,6 +15,8 @@ AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*ʏᴏᴜʀ sᴛᴀᴛᴜs sᴇᴇɴ ᴊᴜsᴛ ɴᴏᴡ ʙʏ ♥️🌸⃝𝐂𝐮𝐭𝐞 𝐬𝐡𝐞𝐢𝐤𝐡ᥫ᭡👑*",
 // set the auto reply massage on status reply  
+ANTI_LINK: process.env.ANTI_LINK || "true",
+// make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
 MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://i.ibb.co/P837zhW/1187.jpg",
@@ -23,7 +25,7 @@ PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "𝐒𝐇𝐄𝐈𝐊𝐇-𝐀𝐋𝐈-𝐌𝐃",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "SHEIKH-ALI-MD",
+STICKER_NAME: process.env.STICKER_NAME || "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -33,13 +35,13 @@ DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "923143702270",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐",
+OWNER_NAME: process.env.OWNER_NAME || "𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/chcyQbkP/Snapchat-850352165.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/P837zhW/1187.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> HI DEAR I'M ONLINE I'M 𓄂𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ WHATSAPP BOT 😊♻️*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> HI DEAR I'M ONLINE I'M 𓄂𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ WHATSAPP BOT 😊♻️",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
@@ -49,7 +51,7 @@ ANTI_BAD: process.env.ANTI_BAD || "false",
 // false or true for anti bad words  
 MODE: process.env.MODE || "public",
 // make bot public-private-inbox-group 
-ANTI_LINK: process.env.ANTI_LINK || "true",
+ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",
 // make anti link true,false for groups 
 AUTO_VOICE: process.env.AUTO_VOICE || "false",
 // make true for send automatic voices
