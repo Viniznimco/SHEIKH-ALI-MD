@@ -4,16 +4,16 @@ const { getBuffer } = require("../lib/functions");
 const { Sticker, StickerTypes } = require("wa-sticker-formatter");
 
 cmd({
-    pattern: "emix",
+    pattern: "emojimix",
     desc: "Combine two emojis into a sticker.",
     category: "fun",
     react: "😃",
-    use: ".emix 😂,🙂",
+    use: ".emojimix 😂,🙂",
     filename: __filename,
 }, async (conn, mek, m, { args, q, reply }) => {
     try {
         if (!q.includes(",")) {
-            return reply("❌ *Usage:* .emix 😂,🙂\n_Send two emojis separated by a comma._");
+            return reply("❌ *Usage:* .emojimix 😂,🙂\n_Send two emojis separated by a comma._");
         }
 
         let [emoji1, emoji2] = q.split(",").map(e => e.trim());

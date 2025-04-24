@@ -56,7 +56,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363333032882285@newsletter',
-          newsletterName: '© Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡',
+          newsletterName: '𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐',
           serverMessageId: 143
         }
       }

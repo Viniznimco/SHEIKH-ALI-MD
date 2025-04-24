@@ -34,3 +34,5 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`error: ${e.response ? e.response.data.message : e.message}`);
     }
 });
+
+// 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐

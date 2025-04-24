@@ -201,7 +201,7 @@ cmd({
       + `┃▸ *File Name:* ${file_name}\n`
       + `┃▸ *File Type:* ${mime_type}\n`
       + `╰━━━⪼\n\n`
-      + `📥 *Downloading your file...*`;
+      + `📥 *Downloaded your file...*`;
 
     await conn.sendMessage(from, {
       document: { url: dl_link },
@@ -305,7 +305,7 @@ cmd({
         document: { url: downloadUrl },
         mimetype: response.data.result.mimetype,
         fileName: response.data.result.fileName,
-        caption: "*© Powered By JawadTechX*"
+        caption: "*© Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡*"
       }, { quoted: m });
 
       await conn.sendMessage(from, { react: { text: "✅", key: m.key } });

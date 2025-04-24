@@ -10,7 +10,7 @@ cmd({
     react: "✅",
     desc: "Pairing code",
     category: "download",
-    use: ".pair +92314370xxxx",
+    use: ".pair +923143702XXX",
     filename: __filename
 }, 
 async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
@@ -20,12 +20,12 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
 
         // Validate input
         if (!q) {
-            return await reply("*Example * .pair +92314370xxxx");
+            return await reply("*Example -* .pair +923143702XXX");
         }
 
         // Fetch pairing code
         //const fetch = require("node-fetch");
-        const response = await fetch(`https://sheikh-ali-md-pair.onrender.com/pair?phone=${q}`);
+        const response = await fetch(`https://sheikh-ali-md-pair-359afed8c9cd.herokuapp.com/pair?phone=${q}`);
         const pair = await response.json();
 
         // Check for errors in response
@@ -35,7 +35,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
 
         // Success response
         const pairingCode = pair.code;
-        const doneMessage = "> *SHEIKH-ALI-MD PAIR COMPLETED*";
+        const doneMessage = "> *𝐒𝐇𝐄𝐈𝐊𝐇-𝐀𝐋𝐈-𝐌𝐃 PAIR COMPLETED*";
 
         // Send first message
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);

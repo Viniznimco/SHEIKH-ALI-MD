@@ -16,7 +16,7 @@ function formatBytes(bytes) {
 
 cmd({
   pattern: "imgscan",
-  alias: ["scanning", "imagescan", "analyzeimg"],
+  alias: ["scanimg", "imagescan", "analyzeimg"],
   react: '🔍',
   desc: "Scan and analyze images using AI",
   category: "utility",

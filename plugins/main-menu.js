@@ -333,6 +333,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• 👤 githubstalk
 ┃◈┃• 🔍 yts
 ┃◈┃• 📹 ytv
+┃◈┃• 📝msg
 ┃◈╰─────────────────┈⊷
 ╰━━━━━━━━━━━━━━━━━━━┈⊷
 > ${config.DESCRIPTION}`;
@@ -358,7 +359,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });

@@ -1,4 +1,4 @@
-// code by ⿻ ⌜ 𝐊𝐇𝐀𝐍 ⌟⿻⃮͛🇵🇰𖤐
+// code by ⿻ ⌜ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡ ⌟⿻⃮͛🇵🇰𖤐
 
 const axios = require("axios");
 const config = require('../config');
@@ -24,7 +24,7 @@ async (conn, mek, m, {
   }
 
   try {
-    // created by Ali Ahmad 
+    // created by jawad tech 
     const response = await axios.get(`https://api.davidcyriltech.my.id/ssweb?url=${q}`);
     const screenshotUrl = response.data.screenshotUrl;
 

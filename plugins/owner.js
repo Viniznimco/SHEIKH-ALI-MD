@@ -30,19 +30,23 @@ async (conn, mek, m, { from }) => {
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
             image: { url: 'https://i.ibb.co/xqkj0Jkr/9557.jpg' }, // Image URL from your request
-            caption: `╭━━〔 *SHEIKH-ALI-MD* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• *Name* - ${ownerName}
-┃◈┃• *Number* ${ownerNumber}
-┃◈┃• *WhatsApp*: https://whatsapp.com/channel/0029Vao1lnR1nozDF8jBNh3B
-┃◈┃• *YouTube*: https://youtube.com/@sheikh-ali-2412?si=0WslRm5BX7pUymxX
-┃◈┃• *Instagram*: https://www.instagram.com/sheikh_ali_2424?igsh=MW4wbWN1ejFsODJyag==
-┃◈┃• *Facebook*: https://www.facebook.com/share/15oHg1oLXk/
-┃◈┃• *Tiktok*: https://www.tiktok.com/@sheikh_ali_2412
-┃◈┃• *WhatsApp*: https://whatsapp.com/channel/0029VajDW8fL2ATvFiFt4l1e
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> © Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡`, // Display the owner's details
+            caption: `┏━━━━━━━━━━━━━━ 
+┃𝐒𝐇𝐄𝐈𝐊𝐇-𝐀𝐋𝐈-𝐌𝐃
+┃𝐎𝐖𝐍𝐄𝐑'𝐒
+┃𝐃𝐄𝐓𝐀𝐈𝐋𝐒
+┗━━━━━━━━━━━━━━━ 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ★ || ᴄʀᴇᴀᴛᴏʀ = 𖥘⚡ 𝐀𝐋𝐈 𝐀𝐇𝐌𝐀𝐃•••²⁴⁰² ⚡𖥘 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ★ || ᴏᴡɴᴇʀ = https://wa.me/923143702270 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ★ || ᴡʜᴀᴛsᴀᴘᴘ = https://whatsapp.com/channel/0029Vao1lnR1nozDF8jBNh3B
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ★ || ʙᴏᴛ ʀᴇᴘᴏ = https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ ★ || ʏᴏᴜᴛᴜʙᴇ = https://youtube.com/@sheikh-ali-2412?si=jtHyERObmqci0YEo  
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓄂𝕚𝕥𝕩.$𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡ `, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
@@ -57,7 +61,7 @@ async (conn, mek, m, { from }) => {
 
         // Send audio as per your request
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/raw/refs/heads/main/autovoice/menunew.m4a' }, // Audio URL
+            audio: { url: 'https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD-DATA/raw/refs/heads/main/autovoice/menunew.m4a' }, // Audio URL
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
