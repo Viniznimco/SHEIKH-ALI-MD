@@ -29,7 +29,7 @@
       "description": "paste your alive message hear.",
       "required": true,
       "value": "HI DEAR I'M ONLINE I'M 𓄂𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ WHATSAPP BOT 😊♻️"
-    },, 
+    }, 
       
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
