@@ -33,7 +33,7 @@ cmd({
     await conn.sendMessage(from, {
       video: { url: data.downloadUrl },
       mimetype: "video/mp4",
-      caption: "📥 *Instagram Video Downloaded Successfully!*"
+      caption: "> © Pᴏᴡᴇʀᴇᴅ Bʏ 𒁂𓄂❥.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼࿐ ♡"
     }, { quoted: m });
 
   } catch (error) {
