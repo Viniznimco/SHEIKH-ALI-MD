@@ -2,7 +2,7 @@ const axios = require("axios");
 const { cmd } = require("../command");
 
 cmd({
-  pattern: "fb",
+  pattern: "fb1",
   alias: ["facebook", "fbdl"],
   desc: "Download Facebook videos",
   category: "download",
@@ -19,7 +19,7 @@ cmd({
     await conn.sendMessage(from, { react: { text: '⏳', key: m.key } });
 
     // Fetch video URL from the API
-    const apiUrl = `https://lance-frank-asta.onrender.com/api/downloader?url=${encodeURIComponent(q)}`;
+    const apiUrl = `https://apis.davidcyriltech.my.id/facebook2?url=${encodeURIComponent(q)}`;
     const { data } = await axios.get(apiUrl);
 
     // Check if the API response is valid
