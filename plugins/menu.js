@@ -56,11 +56,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                         reply(`*꧁◈╾───☉ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ ☉───╼◈꧂*
 
 ╭────────●●►
-┃◈┃• facebook
+┃◈┃• fb
 ┃◈┃• mediafire
 ┃◈┃• tiktok
 ┃◈┃• twitter
-┃◈┃• Insta
+┃◈┃• insta
 ┃◈┃• apk
 ┃◈┃• img
 ┃◈┃• tt2
@@ -171,6 +171,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• repeat 
 ┃◈┃• ask
 ┃◈┃• readmore
+┃◈┃• shorturl
 ╰────────────────────●●►
 
 
@@ -266,6 +267,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• hidetag
 ┃◈┃• tagall
 ┃◈┃• tagadmins
+┃◈┃• delete-link
+┃◈┃• anti-bot
+┃◈┃• acceptall
+┃◈┃• rejectall
+┃◈┃• anti-link
+┃◈┃• newgc
+┃◈┃• exit
+┃◈┃• setgpp
 ╰────────────────────●●►
 
 
@@ -290,6 +299,19 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• ping
 ┃◈┃• gjid
 ┃◈┃• jid @user
+┃◈┃• mode private /public
+┃◈┃• auto-typing on /off
+┃◈┃• auto-recording on /off
+┃◈┃• auto-react on /off
+┃◈┃• status-seen on /off
+┃◈┃• status-react on /off
+┃◈┃• status-reply on /off
+┃◈┃• always-online on /off
+┃◈┃• read-messages on /off
+┃◈┃• auto-sticker on /off
+┃◈┃• auto-reply on /off
+┃◈┃• anti-call on /off
+┃◈┃• anti-bad on /off
 ╰────────────────────●●►
 
 
