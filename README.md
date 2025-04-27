@@ -21,19 +21,7 @@ src="https://cardivo.vercel.app/api?name=SHEIKH%20ALI%20MD&description=💫THE%2
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 </p>
-  <p align="center">
-   <!-- Repo Views -->
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSHEIKH-ALI-2402%2FSHEIKH-ALI-MD&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Repo Views Badge">
- <a href="https://github.com/SHEIKH-ALI-2402?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/SHEIKH-ALI-2402label=Followers&style=social"></a>
-<a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/stargazers/"><img title="STARS" src="https://img.shields.io/github/stars/SHEIKH-ALI-2402/SHEIKH-ALI-MD?&style=social"></a>
-<a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/SHEIKH-ALI-2402/SHEIKH-ALI-MD?style=social"></a>
-<a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SHEIKH-ALI-2402/SHEIKH-ALI-MD?label=Watching&style=social"></a>
-<!-- Repo Size -->
-  <img src="https://img.shields.io/github/repo-size/SHEIKH-ALI-2402/SHEIKH-ALI-MD?color=gold&label=Repo%20Size&style=plastic" alt="Repo Size">
-  <!-- Developer -->
-  <img src="https://img.shields.io/static/v1?label=OWNER&message=ALI%20AHMAD%20FAROOQ&color=pink&style=plastic" alt="Developer Badge">
-</p>
-<p align='center'>
+  
 </p>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <div align="center"><br> <img src="https://profile-counter.glitch.me/SHEIKH-ALI-MD/count.svg" /><br>SHEIKH-ALI-MD</div>
