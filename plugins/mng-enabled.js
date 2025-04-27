@@ -34,29 +34,6 @@ cmd({
      }
  });
  
- cmd({
-     pattern: "auto-voice",
-     alias: ["autovoice"],
-     description: "Set bot status to always online or offline.",
-     category: "settings",
-     filename: __filename
- },    
- async (conn, mek, m, { from, args, isOwner, reply }) => {
-     if (!isOwner) return reply("*📛 ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!*");
- 
-     const status = args[0]?.toLowerCase();
-     // Check the argument for enabling or disabling the anticall feature
-     if (args[0] === "on") {
-         config.AUTO_VOICE = "true";
-         return reply("*auto-voice feature is now enabled.*");
-     } else if (args[0] === "off") {
-         config.AUTO_VOICE = "false";
-         return reply("*auto-voice feature is now disabled.*");
-     } else {
-         return reply(`_example:  .auto-voice on_`);
-     }
- });
- 
 cmd({
     pattern: "mode",
     desc: "Set bot mode to private or public.",
@@ -159,7 +136,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
 // AUTO_VIEW_STATUS COMMANDS
 //--------------------------------------------
 cmd({
-    pattern: "auto-seen",
+    pattern: "status-seen",
     alias: ["autostatusview"],
     desc: "Enable or disable auto-viewing of statuses",
     category: "settings",
@@ -177,7 +154,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
         config.AUTO_VIEW_STATUS = "false";
         return reply("Auto-viewing of statuses is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  .ᴀᴜᴛᴏ-sᴇᴇɴ ᴏɴ*`);
+        return reply(`*🫟 Example:  .status-seen on/ off*`);
     }
 }); 
 //--------------------------------------------
@@ -324,7 +301,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
         config.AUTO_REPLY = "false";
         return reply("auto-reply feature is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: . ᴀᴜᴛᴏ-ʀᴇᴘʟʏ ᴏɴ*`);
+        return reply(`*🫟 Example: .auto-reply on*`);
     }
 });
 
