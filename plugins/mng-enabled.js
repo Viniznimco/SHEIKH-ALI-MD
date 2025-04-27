@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-//           ALI-MD  
+//           SHEIKH-ALI-MD  
 //---------------------------------------------------------------------------
 //  ⚠️ DO NOT MODIFY THIS FILE ⚠️  
 //---------------------------------------------------------------------------
@@ -11,33 +11,6 @@ const { cmd, commands } = require("../command");
 let antilinkAction = "off"; // Default state
 let warnCount = {}; // Track warnings per user
 
-cmd({ 
-  pattern: "setprefix", 
-  alias: ["prefix"], 
-  desc: "Change bot prefix.", 
-  category: "settings", 
-  filename: __filename 
-}, async (conn, mek, m, { 
-  from, 
-  args, 
-  isOwner, 
-  reply 
-}) => { 
-  if (!isOwner) return reply("*📛 Only the owner can use this command!*"); 
-  if (!args[0]) return reply("❌ Please provide a new prefix."); 
-  const newPrefix = args[0]; 
-  config.PREFIX = newPrefix; 
-  // Save config to file 
-  fs.writeFileSync('./config.json', JSON.stringify(config, null, 2)); 
-  reply(`*Prefix changed to:* ${newPrefix}`); 
-  const { exec } = require("child_process"); 
-  reply("*_successfully set_*"); 
-  await sleep(1500); 
-  exec("pm2 restart all"); 
-  reply("*_ALI-MD STARTED NOW...🚀_*"); 
-});
-
-//========mode
 cmd({
      pattern: "mention-reply",
      alias: ["menetionreply", "mee"],
@@ -109,7 +82,7 @@ cmd({
 reply("*_RESTARTING NOW...🚀_*")
 await sleep(1500)
 exec("pm2 restart all")
-reply("*_ALI-MD STARTED NOW...🚀_*");
+reply("*SHEIKH-ALI-MD STARTED NOW...🚀_*");
     } else {
         return reply("❌ Invalid mode. Please use `.mode private` or `.mode public`.");
     }
@@ -402,7 +375,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
         config.AUTO_STATUS_REPLY = "false";
         return reply("status-reply feature is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  .sᴛᴀᴛᴜs-ʀᴇᴘʟʏ ᴏɴ*`);
+        return reply(`*🫟 Example:  .status-reply on*`);
     }
 });
 //--------------------------------------------
@@ -453,7 +426,7 @@ cmd({
         antibotAction = action;
         return reply(`*Antibot action set to:* ${action.toUpperCase()}`);
     } else {
-        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ: . ᴀɴᴛɪ-ʙᴏᴛ ᴏғғ/ᴡᴀʀɴ/ᴅᴇʟᴇᴛᴇ/ᴋɪᴄᴋ*");
+        return reply("*🫟 Example: . anti-bot off/warn/delete/kick*");
     }
 });
 
@@ -585,74 +558,6 @@ cmd({
   }
 });
 //--------------------------------------------
-//   POLL COMMANDS
-//--------------------------------------------
-cmd({
-  pattern: "poll",
-  category: "group",
-  desc: "Create a poll with a question and options in the group.",
-  filename: __filename,
-}, async (conn, mek, m, { from, isGroup, body, sender, groupMetadata, participants, prefix, pushname, reply }) => {
-  try {
-    let [question, optionsString] = body.split(";");
-    
-    if (!question || !optionsString) {
-      return reply(`Usage: ${prefix}poll question;option1,option2,option3...`);
-    }
-
-    let options = [];
-    for (let option of optionsString.split(",")) {
-      if (option && option.trim() !== "") {
-        options.push(option.trim());
-      }
-    }
-
-    if (options.length < 2) {
-      return reply("*Please provide at least two options for the poll.*");
-    }
-
-    await conn.sendMessage(from, {
-      poll: {
-        name: question,
-        values: options,
-        selectableCount: 1,
-        toAnnouncementGroup: true,
-      }
-    }, { quoted: mek });
-  } catch (e) {
-    return reply(`*An error occurred while processing your request.*\n\n_Error:_ ${e.message}`);
-  }
-});
-//--------------------------------------------
-// RANDOM SHIP COMMANDS
-//--------------------------------------------
-cmd({
-    pattern: "randomship",
-    desc: "Randomly ship two members in a group.",
-    category: "group",
-    react: "💞",
-    filename: __filename
-}, async (conn, mek, m, { from, isGroup, participants, reply }) => {
-    try {
-        if (!isGroup) return reply("❌ This command can only be used in groups!");
-        
-        const members = participants.filter(p => !p.admin); // Exclude admins if needed
-        if (members.length < 2) return reply("❌ Not enough members to ship!");
-
-        const shuffled = members.sort(() => Math.random() - 0.5);
-        const user1 = shuffled[0].id;
-        const user2 = shuffled[1].id;
-
-        reply(`💖 I randomly ship @${user1.split("@")[0]} & @${user2.split("@")[0]}! Cute couple! 💞`, {
-            mentions: [user1, user2]
-        });
-
-    } catch (e) {
-        console.error(e);
-        reply("❌ Error processing command.");
-    }
-});
-//--------------------------------------------
 //  NEW_GC COMMANDS
 //--------------------------------------------
 cmd({
@@ -704,51 +609,6 @@ cmd({
   }
 });
 //--------------------------------------------
-//  AUTO_RECORDING COMMANDS
-//--------------------------------------------
-cmd({
-    pattern: "invite",
-    alias: ["glink"],
-    desc: "Get group invite link.",
-    category: "group", // Already group
-    filename: __filename,
-}, async (conn, mek, m, { from, quoted, body, args, q, isGroup, sender, reply }) => {
-    try {
-        // Ensure this is being used in a group
-        if (!isGroup) return reply("𝐓𝐡𝐢𝐬 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐈𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩❗");
-
-        // Get the sender's number
-        const senderNumber = sender.split('@')[0];
-        const botNumber = conn.user.id.split(':')[0];
-        
-        // Check if the bot is an admin
-        const groupMetadata = isGroup ? await conn.groupMetadata(from) : '';
-        const groupAdmins = groupMetadata ? groupMetadata.participants.filter(member => member.admin) : [];
-        const isBotAdmins = isGroup ? groupAdmins.some(admin => admin.id === botNumber + '@s.whatsapp.net') : false;
-        
-        if (!isBotAdmins) return reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐌𝐞 𝐀𝐝𝐦𝐢𝐧 𝐑𝐨𝐥𝐞 ❗");
-
-        // Check if the sender is an admin
-        const isAdmins = isGroup ? groupAdmins.some(admin => admin.id === sender) : false;
-        if (!isAdmins) return reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐌𝐞 𝐀𝐝𝐦𝐢𝐧 𝐑𝐨𝐥𝐞 ❗");
-
-        // Get the invite code and generate the link
-        const inviteCode = await conn.groupInviteCode(from);
-        if (!inviteCode) return reply("Failed to retrieve the invite code.");
-
-        const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
-
-        // Reply with the invite link
-        return reply(`*Here is your group invite link:*\n${inviteLink}`);
-        
-    } catch (error) {
-        console.error("Error in invite command:", error);
-        reply(`An error occurred: ${error.message || "Unknown error"}`);
-    }
-});
-
-
-//--------------------------------------------
 //           BROADCAST COMMANDS
 //--------------------------------------------
 cmd({
@@ -785,7 +645,7 @@ cmd({
   }
 });
 //--------------------------------------------
-//  AUTO_RECORDING COMMANDS
+//  GROUP PROFILE 
 //--------------------------------------------
 cmd({
     pattern: "setgpp",
