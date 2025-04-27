@@ -21,7 +21,14 @@ src="https://cardivo.vercel.app/api?name=SHEIKH%20ALI%20MD&description=💫THE%2
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 </p>
-  
+<div align="center">
+  <a href="https://github.com/SHEIKH-ALI-2402/followers"><img title="Followers" src="https://img.shields.io/github/followers/SHEIKH-ALI-2402?color=EB5406&style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/SHEIKH-ALI-2402/SHEIKH-ALI-MD?color=FFCE44&style=for-the-badge&logo=reverbnation&logoColor=white"></a>
+  <a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/SHEIKH-ALI-2402/SHEIKH-ALI-MD?color=FF007F&style=for-the-badge&logo=git&logoColor=white"></a>
+  <a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/SHEIKH-ALI-2402/SHEIKH-ALI-MD?style=for-the-badge&color=FFFF33&logo=docusign&logoColor=white"></a>
+  <a href="https://github.com/SHEIKH-ALI-2402/SHEIKH-ALI-MD/graphs/commit-activity"><img height="28" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge&logo=gitpod&logoColor=white"></a>
+</div>
+
 </p>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <div align="center"><br> <img src="https://profile-counter.glitch.me/SHEIKH-ALI-MD/count.svg" /><br>SHEIKH-ALI-MD</div>
