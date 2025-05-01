@@ -85,4 +85,4 @@ module.exports = {
     getAllAntiDeleteSettings,
 };
 
-// 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼ ♡
+// 𓄂𝕚𝕥𝕩.ℂ𝔼ℕ𝔸 𝕁𝕌ℕ𝕀𝕆ℝ 🔥༽༼ ♡
